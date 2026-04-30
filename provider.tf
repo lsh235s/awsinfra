@@ -5,13 +5,6 @@ terraform {
       version = "~> 5.0"
     }
   }
-
-  backend "s3" {
-    bucket         = "myapp-terraform-state-20260429"
-    key            = "training/lab06/terraform.tfstate"
-    region         = "ap-northeast-2"
-    encrypt        = true
-  }
 }
 
 provider "aws" {
